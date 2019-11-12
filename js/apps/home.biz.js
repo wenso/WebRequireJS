@@ -10,14 +10,7 @@ define(function(require) {
 
 	var app={
 		init:function(){
-
-		    var http="http://app.i-liaoning.com.cn:8126";
-		    var uu = $.getUrlParam("uu")||"",
-                pt=$.getUrlParam("pt")||"";
-            var USER_LOVE_FLAG="user_love_flag";
-
 		    $("#GoTopBtn").topBtn();
-
 		    $("#SortBtn").dropDownList({
                 "flag":"4",
                 "itemClick":sortClick,
@@ -33,10 +26,9 @@ define(function(require) {
             $("#ActBanner").actBanner();
             $("#ActList").actList();
 		    function sortClick(val){
-		        alert("选择了"+val);
+		        $("#ActList").actList();
 		    }
-            fastClick(document.body);
-
+        fastClick(document.body);
 		}
 	};
 	return app;
