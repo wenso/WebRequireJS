@@ -10,6 +10,7 @@ define(function(require) {
 
 	var app={
 		init:function(){
+				//可以将body中html都在这里写到页面上，然后在执行以下方法
 		    $("#GoTopBtn").topBtn();
 		    $("#SortBtn").dropDownList({
                 "flag":"4",
@@ -23,8 +24,8 @@ define(function(require) {
                 }]
               }
             );
-            $("#ActBanner").actBanner();
-            $("#ActList").actList();
+        $("#ActBanner").actBanner();
+        $("#ActList").actList();
 		    function sortClick(val){
 		        $("#ActList").actList();
 		    }
