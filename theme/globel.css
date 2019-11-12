@@ -1,0 +1,400 @@
+/***global.css 2013-08-21 zhaoyong.neu@neusoft.com ***/
+/**reset******************************************/
+html, body, iframe, object, div, h1, h2, h3, h4, h5, h6, p, span, label, a, pre, q, em, strong, table, caption, thead, tbody, tfoot, tr, th, td, form, fieldset, legend, ul, ol, li, dl, dt, dd, img {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+body {
+	line-height: 1.5;
+	background: white;
+}
+a img {
+	border: none;
+}
+:focus {
+	outline: 0;
+}
+table, th, td {
+	vertical-align: middle;
+}
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+th, td {
+	font-weight: normal;
+	text-align: left;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+	font-family:"微软雅黑", Arial, Helvetica, sans-serif;
+}
+h1 {
+	font-size: 2.2em;
+}
+h2 {
+	font-size: 1.8em;
+}
+h3 {
+	font-size: 1.6em;
+}
+h4 {
+	font-size: 1.4em;
+}
+h5 {
+	font-size: 1.2em;
+}
+h6 {
+	font-size: 1em;
+}
+select, input {
+	margin: 0;
+}
+img, object, select, input, textarea {
+	vertical-align: top;
+}
+ol {
+	list-style-type: decimal;
+}
+ul {
+	list-style-type: disc;
+}
+li ul, li ol {
+	margin: 0;
+}
+pre {
+	background-color: #FEFBE9;
+	margin: 1em 0;
+}
+/**abstract ******************************************/
+/**/
+html {
+	font-size: 100.01%;
+}
+body {
+	font-size: 75%;
+	color: #333;
+}
+
+.l {
+	float: left !important;
+}
+
+.r {
+	float: right !important;
+}
+
+.mauto {
+	margin: 0 auto;
+}
+
+.left {
+	text-align: left !important;
+}
+
+.right {
+	text-align: right !important;
+}
+
+.center {
+	text-align: center !important;
+}
+
+ul.list_h, ol.list_h {
+	list-style-type: none;
+}
+ul.list_h li, ol.list_h li {
+	float: left;
+}
+
+ul.list_v li, ol.list_v li {
+	float: none;
+}
+
+.inline {
+	display: inline;
+}
+
+.block {
+	display: block;
+}
+
+.hide {
+	display: none !important;
+}
+
+.show {
+	display: block !important;
+}
+
+.show_inline {
+	display: inline;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+.visible {
+	visibility: visible;
+}
+
+.b {
+	font-weight: bold;
+}
+
+.i {
+	font-style: italic;
+}
+
+.u {
+	text-decoration: underline;
+}
+
+.d {
+	text-decoration: line-through;
+}
+
+.small {
+	font-size: .8em;
+}
+
+.large {
+	font-size: 1.6em;
+}
+
+
+
+.first {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.last {
+	margin-right: 0;
+	padding-right: 0;
+}
+
+.top {
+	margin-top: 0;
+	padding-top: 0;
+}
+
+.bottom {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.corner {
+	border-radius: 4px;
+}
+.corner .corner_ltp {
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+.corner .corner_rtp {
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+.clear {
+	clear: both;
+}
+
+.clear_fix, .clear_fix:after {
+	clear: both;
+	font-size: 0;
+	line-height: 0;
+	height: 0;
+	display: block;
+	visibility: hidden;
+	overflow: hidden;
+}
+
+.w_40 {
+	width: 40px;
+}
+.w_100 {
+	width: 100px;
+}
+.w_160 {
+	width: 160px;
+}
+.w_220 {
+	width: 220px;
+}
+.w_280 {
+	width: 280px;
+}
+.w_340 {
+	width: 340px;
+}
+.w_400 {
+	width: 400px;
+}
+.w_460 {
+	width: 460px;
+}
+.w_520 {
+	width: 520px;
+}
+.w_580 {
+	width: 580px;
+}
+.w_640 {
+	width: 640px;
+}
+.w_960{
+    width:960px;
+}
+.mr_100 {
+	margin-right: 100px;
+}
+.mr_120 {
+	margin-right: 120px;
+}
+.mr_220 {
+	margin-right: 220px;
+}
+.mr_240 {
+	margin-right: 240px;
+}
+.mr_280 {
+	margin-right: 280px;
+}
+.mr_400 {
+	margin-right: 400px;
+}
+.mr_420 {
+	margin-right: 420px;
+}
+.mr_480 {
+	margin-right: 480px;
+}
+.sv_10 {
+	height: 10px;
+}
+.sv_20 {
+	height: 20px;
+}
+
+.o1 {
+	opacity: .01;
+	filter: alpha(opacity=1);
+}
+.o2 {
+	opacity: .02;
+	filter: alpha(opacity=2);
+}
+.o3 {
+	opacity: .03;
+	filter: alpha(opacity=3);
+}
+.o4 {
+	opacity: .04;
+	filter: alpha(opacity=4);
+}
+.o5 {
+	opacity: .05;
+	filter: alpha(opacity=5);
+}
+.h1 {
+	height: 1px;
+}
+.h2 {
+	height: 2px;
+}
+.h3 {
+	height: 3px;
+}
+.h4 {
+	height: 4px;
+}
+.h5 {
+	height: 5px;
+}
+.w1 {
+	width: 1px;
+}
+.w2 {
+	width: 2px;
+}
+.w3 {
+	width: 3px;
+}
+.w4 {
+	width: 4px;
+}
+.w5 {
+	width: 5px;
+}
+.shaw {
+	position: absolute;
+	background: #000;
+	overflow: hidden;
+	z-index: 3;
+	top: 0;
+}
+
+.error {
+	color: #CC0000;
+}
+.notice {
+	color: #514721;
+}
+.success {
+	color: #264409;
+}
+
+.red {
+	color: #C00;
+}
+.green {
+	color: #093;
+}
+.orange {
+	color: #F60;
+}
+.yellow {
+	color: #FC0;
+}
+/**common *******************************************/
+
+input[type=text], input[type=password], input.text, textarea {
+	background-color: #fff;
+	border: 1px solid #bbb;
+}
+input[type=text]:focus, input[type=password]:focus, input.text:focus, textarea:focus {
+	border-color: #666;
+}
+textarea {
+	width: 390px;
+	height: 200px;
+	padding: 5px;
+}
+select {
+	background-color: #fff;
+	border: 1px solid #bbb;
+}
+label {
+	font-weight: bold;
+}
+fieldset {
+	padding: 0 1.2em 1.2em;
+	margin: 0 0 1.5em 0;
+	border: 1px solid #ccc;
+}
+legend {
+	font-weight: bold;
+	font-size: 1.2em;
+	margin-top: -0.2em;
+	margin-bottom: 1em;
+}
+
+input::-ms-clear{display:none;}
+input::-ms-reveal{display:none;}
