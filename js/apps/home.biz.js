@@ -7,17 +7,17 @@ define(function(require) {
 	var fn=require('fn');
 	var swiper=require('swiper');
 	var fastClick = require('fastclick');
-    
-	var app={	
+
+	var app={
 		init:function(){
-		    
+
 		    var http="http://app.i-liaoning.com.cn:8126";
 		    var uu = $.getUrlParam("uu")||"",
                 pt=$.getUrlParam("pt")||"";
             var USER_LOVE_FLAG="user_love_flag";
-          
+
 		    $("#GoTopBtn").topBtn();
-		    
+
 		    $("#SortBtn").dropDownList({
                 "flag":"4",
                 "itemClick":sortClick,
@@ -26,14 +26,14 @@ define(function(require) {
                    "value":"3"
                 },{
                     "name":"默认排序",
-                    "value":"4" 
+                    "value":"4"
                 }]
               }
             );
-            $("#ActBanner").actBanner(); 
+            $("#ActBanner").actBanner();
             $("#ActList").actList();
 		    function sortClick(val){
-		        $("#ActList").actList({"encstr":encodeURIComponent(uu),"citycode":pt,"sort":val});
+		        alert("选择了"+val);
 		    }
             fastClick(document.body);
 
